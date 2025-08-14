@@ -226,6 +226,187 @@ h4{
     border: 4px solid #c8c2c2;
     padding: 4px;
 }
+.live {
+    background: #151516;
+    padding: 40px;
+}
+
+.live-border {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.live a {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.live .legal-text {
+    margin-top: 20px;
+    font-size: 10px;
+}
+.live .btn {
+    background-color: #00ed82;
+}
+.live-sports {
+    background: url("https://sportsnaut.com/wp-content/uploads/2022/04/Hulu-Sports2_Hulu-1-1024x544.jpeg") no-repeat center center / cover;
+    height: 800px;
+    position: relative;
+    opacity: 0.8;
+}
+.live-sports-content {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    max-width: 550px;
+}
+.live-sports-logos {
+    width: 400px;
+    margin-top: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.live-sports-logos > div {
+    background: #fff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+/* footer */
+
+.footer {
+    background: #ebedf2;
+    color: #333;
+}
+
+.footer a {
+    color: #333;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+}
+.footer-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-lists .List-head {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.divider {
+    width: 100%;
+    height: 3px;
+    border-top: 1px #ccc solid;
+    margin: 30px 0;
+}
+.social-icons i {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.modal .close {
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.5;
+}
+.modal-box {
+    margin: 10% auto;
+    width: 400px;
+    background: #fff;
+    color: #333;
+    position: relative;
+    animation: modalopen 1s;
+}
+.modal-body {
+    padding: 50px;
+}
+.modal-body h3 {
+    color: #000;
+    font-weight: bold;
+}
+.modal label {
+    color: #000;
+}
+.modal a {
+    color: #000;
+}
+.modal p {
+    color: #000;
+}
+.modal p a {
+    color: steelblue;
+}
+.btn-dark {
+    background: #000;
+    color: #fff;
+}
+.modal-body .btn {
+    width: 100%;
+    margin-top: 30px;
+}
+.modal .modal-footer {
+    background: #f7f7f9;
+    color: #333;
+    padding: 20px 0;
+    border-top: 1px #eee solid;
+    text-align: center;
+}
+/* form */
+
+.form-control {
+    margin: 20px 0;
+}
+.form-control label {
+    display: block;
+    text-transform: uppercase;
+}
+.form-control input {
+    width: 100%;
+    border: 2px #ccc solid;
+    border-radius: 5px;
+    height: 50px;
+    padding: 5px;
+}
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 1100px) {
     .categories .covers {
         grid-template-columns: 1fr 1fr;
@@ -268,5 +449,26 @@ h4{
     }
     .categories .covers {
         grid-template-columns: 1fr;
+    }
+    .live-border {
+        padding: 50px;
+    }
+    .live-sports {
+        background: url("https://wallpaperaccess.com/full/1417867.jpg") no-repeat center center / cover;}
+    .live-sports-content {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        right: 100px;
+        margin-right: 20px;
+     } 
+    .live-sports-logos {
+        width: 300px;   
+    } 
+    .footer-lists {
+        flex-direction: column;
+    } 
+    .modal .modal-box {
+        width: 300px;
     }
 }
